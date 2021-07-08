@@ -7,11 +7,11 @@ export function Home() {
 
 	return (
 		<div className="text-center mt-5">
-			<div className="list ">
-				<h3>Todo</h3>
+			<div className="list">
+				<h3 className="pt-5">Todo</h3>
 				<input
 					value={todo}
-					className="input"
+					className="input mt-5"
 					placeholder="What needs to be done"
 					onChange={e => setTodo(e.target.value)}
 				/>
@@ -20,7 +20,8 @@ export function Home() {
 						setList([...list, todo]);
 						setTodo("");
 					}}
-					className="btn btn-success m-2">
+					className="btn btn-success ml-1"
+					style={{ marginBottom: "8px" }}>
 					Add
 				</button>
 				{list.map((element, index) => (
@@ -30,7 +31,7 @@ export function Home() {
 							onClick={() =>
 								setList(list.filter(item => element !== item))
 							}
-							className="btn btn-dark m-4"></button>
+							className="btn btn-primary m-4"></button>
 					</div>
 				))}
 			</div>

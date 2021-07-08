@@ -1,6 +1,6 @@
 @import "~bootstrap/scss/bootstrap.scss";
 .text-center{
-    background-color: lightpink;
+    background-color: lightgray;
     width:650px;
     height: 650px;
     margin: auto;
@@ -10,6 +10,9 @@
     }
     .input{
         background-color: whitesmoke;
+    }
+    h3{
+        color: lightslategray;
     }
 /* 
 
