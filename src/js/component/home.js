@@ -26,7 +26,7 @@ export function Home() {
 				</button>
 				{list.map((element, index) => (
 					<div key={index}>
-						<ul className="list-group">
+						<ul className="list-group list-group-md list-group-item-light">
 							<li className="list-group-item">
 								{element}
 								<button
