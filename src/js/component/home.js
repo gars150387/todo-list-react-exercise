@@ -25,13 +25,17 @@ export function Home() {
 					Add
 				</button>
 				{list.map((element, index) => (
-					<div key={index}>
+					<div
+						key={index}
+						className="col-5 content-justify-center shadow-sm p-3 mb-4 ml-5 bg-light rounded">
 						{element}
 						<button
 							onClick={() =>
 								setList(list.filter(item => element !== item))
 							}
-							className="btn btn-primary m-4"></button>
+							className="btn btn-link m-4">
+							X
+						</button>
 					</div>
 				))}
 			</div>
