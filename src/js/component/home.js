@@ -20,13 +20,13 @@ export function Home() {
 						setList([...list, todo]);
 						setTodo("");
 					}}
-					className="btn btn-success ml-1"
+					className="btn btn-light"
 					style={{ marginBottom: "8px" }}>
 					Add
 				</button>
 				{list.map((element, index) => (
 					<div key={index}>
-						<ul className="list-group list-group-md list-group-item-light">
+						<ul className="list-group list-group-lg">
 							<li className="list-group-item">
 								{element}
 								<button
@@ -37,7 +37,7 @@ export function Home() {
 											)
 										)
 									}
-									className="btn btn-link m-4">
+									className="btn btn-link m-4 text-justify-end">
 									X
 								</button>
 							</li>
