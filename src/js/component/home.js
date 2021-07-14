@@ -41,10 +41,8 @@ export function Home() {
 									X
 								</button>
 							</li>
-							{element.lenght !== ""
-								? `${element.lenght} Items`
-								: "No Items left"}
 						</ul>{" "}
+						{list !== 0 ? `${list.length} Items` : ""}
 					</div>
 				))}
 			</div>
