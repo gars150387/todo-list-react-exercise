@@ -11,7 +11,7 @@ export function Home() {
 				<h3 className="pt-5">ToDo</h3>
 				<input
 					value={todo}
-					className="input mt-5"
+					className="input mt-1"
 					placeholder="What needs to be done"
 					onChange={e => setTodo(e.target.value)}
 				/>
