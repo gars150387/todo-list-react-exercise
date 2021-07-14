@@ -8,7 +8,7 @@ export function Home() {
 	return (
 		<div className="text-center mt-5">
 			<div className="list">
-				<h3 className="pt-5">Todo</h3>
+				<h3 className="pt-5">ToDo</h3>
 				<input
 					value={todo}
 					className="input mt-5"
@@ -41,6 +41,9 @@ export function Home() {
 									X
 								</button>
 							</li>
+							{element.lenght !== ""
+								? `${element.lenght} Items`
+								: "No Items left"}
 						</ul>{" "}
 					</div>
 				))}
