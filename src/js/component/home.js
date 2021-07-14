@@ -20,8 +20,8 @@ export function Home() {
 						setList([...list, todo]);
 						setTodo("");
 					}}
-					className="btn btn-light"
-					style={{ marginBottom: "8px" }}>
+					className="btn btn-xl btn-rounded-end btn-light"
+					style={{ marginBottom: "8px", height: "45px" }}>
 					Add
 				</button>
 				{list.map((element, index) => (
