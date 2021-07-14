@@ -44,7 +44,9 @@ export function Home() {
 						</ul>{" "}
 					</div>
 				))}
-				{list !== 0 ? `${list.length} Item(s) left` : ""}
+				<ul>
+					<li>{list !== 0 ? `${list.length} Item(s) left` : " "}</li>
+				</ul>
 			</div>
 		</div>
 	);
