@@ -42,9 +42,9 @@ export function Home() {
 								</button>
 							</li>
 						</ul>{" "}
-						{list !== 0 ? `${list.length} Item(s) left` : ""}
 					</div>
 				))}
+				{list !== 0 ? `${list.length} Item(s) left` : ""}
 			</div>
 		</div>
 	);
