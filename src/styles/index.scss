@@ -12,8 +12,10 @@
         width: 300px;
         height: 45px;
         box-shadow: 50px;
-        border: transparent;
+        border-color: transparent;
         padding: 20px;
+        background-color: white;
+
     }
     h3{
         font-size: 150px;
@@ -31,8 +33,15 @@
         width: 500px;
         height: 100px;
         margin: auto;
+        border-color: transparent;
+        border-bottom: gray solid 1px;
+        border-left: gray solid 1px;
     }
    .card{
        background-color: lightpink;
        border-color: transparent;
+   }
+   .far{
+       color: black;
+       size: 15px;
    }

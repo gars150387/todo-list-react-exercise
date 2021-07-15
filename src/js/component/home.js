@@ -1,9 +1,19 @@
-import { element } from "prop-types";
+import { element, background } from "prop-types";
 import React, { useState } from "react";
 
 export function Home() {
 	const [list, setList] = useState([]);
 	const [todo, setTodo] = useState("");
+	const [over, setOver] = useState(false);
+	let buttonStyle = {
+		icon: " "
+	};
+
+	{
+		over
+			? (buttonStyle.background = "black")
+			: (buttonStyle.background = " ");
+	}
 
 	return (
 		<div className="text-center mt-5">
@@ -30,6 +40,9 @@ export function Home() {
 							<li className="list-group-item">
 								{element}
 								<button
+									style={background}
+									onMouseOver={() => setOver(true)}
+									onMouseOut={() => setOver(false)}
 									onClick={() =>
 										setList(
 											list.filter(
@@ -38,7 +51,7 @@ export function Home() {
 										)
 									}
 									className="btn btn-link m-4 text-justify-end">
-									X
+									{setOver}
 								</button>
 							</li>
 						</ul>{" "}
