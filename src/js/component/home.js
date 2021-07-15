@@ -4,6 +4,10 @@ import React, { useState } from "react";
 export function Home() {
 	const [list, setList] = useState([]);
 	const [todo, setTodo] = useState("");
+	const [over, setOver] = useState(false);
+	function handleMouseEnter(e) {
+		setOver(true);
+	}
 
 	return (
 		<div className="text-center mt-5">
@@ -38,7 +42,9 @@ export function Home() {
 										)
 									}
 									className="btn btn-link m-4 text-justify-end">
-									<i className="far fa-times-circle fan-2x"></i>
+									<i
+										className={crossClass}
+										onMouseEnter={handleMouseEnter}></i>
 								</button>
 							</li>
 						</ul>{" "}
