@@ -44,9 +44,11 @@ export function Home() {
 						</ul>{" "}
 					</div>
 				))}
-				<ul>
-					<li>{list !== 0 ? `${list.length} Item(s) left` : " "}</li>
-				</ul>
+				<div className="card">
+					<div className="card-body">
+						{list !== 0 ? `${list.length} Item(s) left` : " "}
+					</div>
+				</div>
 			</div>
 		</div>
 	);

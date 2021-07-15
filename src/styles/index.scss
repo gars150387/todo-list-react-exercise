@@ -22,7 +22,7 @@
     }
     .btn-light{
         border: 0px;
-        color: transparent;
+        border-color: transparent;
         margin-left: 2px;
     }
    
@@ -32,3 +32,7 @@
         height: 100px;
         margin: auto;
     }
+   .card{
+       background-color: lightpink;
+       border-color: transparent;
+   }
